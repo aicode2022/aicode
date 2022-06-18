@@ -17,81 +17,67 @@ body::before {
   }
 }
 
-.test {
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
+.bg-darkblue {
+  background-color:#1c2530;
 }
-.testimonials{
-  padding: 40px 0;
-  background: #f1f1f1;
-  color: #434343;
-  text-align: center;
+.col-md-offset-2 {
+  margin-left: 16.66666667%;
 }
-.inner{
+
+.carousel-inner {
+color: #fff;
+}
+.img-fluid {
+  display: block;
   
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
 }
 
-.border{
-  width: 160px;
-  height: 5px;
-  background: orange;
-  margin: 26px auto;
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
 }
-
-.test .row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  color: #04c1c9 !important;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
 }
-.test .col{
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
 }
-.testimonial{
-  background: #fff;
-  padding: 30px;
-}
-.testimonial img{
-  width: 3.4rem;
-  height: 3.4rem;
+#quote-carousel .carousel-indicators li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  vertical-align: middle;
 }
-.name{
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: orange;
- 
-  margin: 20px 0;
- 
+#quote-carousel .carousel-indicators .active {
+  margin: 0;
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all .2s;
 }
-.stars{
-  color: #6ab04c;
-  margin-bottom: 20px;
+.carousel-item blockquote {
+  border-left: none;
+  margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
