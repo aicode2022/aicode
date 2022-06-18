@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +9,9 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>AI Code</title>
 </head>
@@ -22,373 +24,417 @@
 <body>
   <!-- Navbar -->
   <div class="mybody">
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <img src="img/logo2.png" class='logoai' />
+
+        <a href="#" class="navbar-brand lead"><b>AI<span class="text-warning">Science</span></b></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courseplans" class="nav-link">Course Plan</a>
+            </li>
+            <li class="nav-item" data-bs-target="#enroll">
+              <a href="#instructors" class="nav-link">Career</a>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:theaicompany2022@gmail.com" target="_blank" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div class="container" id="home">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Ace your <span class="text-warning"> Data Science </span>Interview !</h1>
+            <p class="lead my-4">
+              Just starting out on your Data Science journey ? No Worries !<br>
+              AI Science will help you from scratch to crack top companies from around the globe to help you make
+              Interview
+              Ready !
+
+            </p>
+            <button class="btn btn-outline-light btn-lg mb-5" data-bs-toggle="modal" data-bs-target="#enroll">
+              Start The Enrollment
+            </button>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-secondary text-light p-5 my-2">
+      <div class="container text-align-center">
+        <div class="d-md-flex justify-content-center align-items-center">
+          <h3 class="mb-3 mb-md-0 lead"><b>Start your jouney with thousands of other Data Scientists all around the
+              world.</b></h3>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Crack the Data Science Interview</h3>
+                <p class="card-text">
+                  Learn how to solve data science interview questions by practising number of questions each week.
+                </p>
+                <a href="#learn" class="btn btn-secondary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Exclusive Take-Home Challenges</h3>
+                <p class="card-text">
+                  Get insider access to the interview process by working on take-home challenges from top companies.
+                </p>
+                <a href="#learn" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Land Your Dream Job as a Data Scientist</h3>
+                <p class="card-text">
+                  Ace your interview and land your dream data job in data science, analytics, and machine learning.
+                </p>
+                <a href="#learn" class="btn btn-secondary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/ds1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>What comes in the upgrade ?</h2>
+            <p class="lead">
+              Upgrade to the full course and learn the right way to think with help from our in-depth solutions and
+              problem solving strategies.
+            </p>
+            <p class="lead">
+              <b>You'll get exclusive access to our full interview question bank, data science take-home challenges,
+                video
+                course and mock interview content, and community of data science candidates and professionals.</b>
+            </p>
+            <a href="#courseplans" class="btn btn-dark mt-3 ">
+              <i class="bi bi-chevron-down"></i> View plans
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Why opt for an upgrade ?</h2>
+            <p class="lead">
+              Data Science interviews are extremely difficult given the wide breadth of topics to study for and lack of
+              consistency.
+            </p>
+            <p class="lead">
+              <b>Fortunately, that's why we are here to help.<br><br>
+                <i class="bi bi-dot"></i>We have sourced over 400+ interview questions from top tech companies.<br>
+                <i class="bi bi-dot"></i>Get ready for your next interview with our community of data science and
+                machine
+                learning mentors and professionals.<br>
+                <i class="bi bi-dot"></i>Get crowdsourced insider details on the interview processes at various top tech
+                companies.<br>
+              </b>
+            </p>
+            <a href="#courseplans" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-down"></i> Learn more
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/ds3.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Question Accordion -->
+    <section class="bg-secondary text-light p-5">
+      <div class="container text-align-center" id="features">
+        <div class="d-md-flex justify-content-center align-items-center">
+          <h3 class="mb-3 mb-md-0 lead"><b>Get a headstart in your career as a Data Scientist with AI Science.</b></h3>
+
+
+        </div>
+      </div>
+    </section>
+    <!---->
     <div class="container">
-      <img src="img/logo2.png" class='logoai' />
-
-      <a href="#" class="navbar-brand lead">AI Code</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#courseplans" class="nav-link">Course Plan</a>
-          </li>
-          <li class="nav-item" data-bs-target="#enroll">
-            <a href="#instructors" class="nav-link">Career</a>
-          </li>
-          <li class="nav-item">
-            <a href="mailto:theaicompany2022@gmail.com" target="_blank" class="nav-link" >Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Showcase -->
-  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-    <div class="container" id="home">
-      <div class="d-sm-flex align-items-center justify-content-between">
-        <div>
-          <h1>Ace your <span class="text-warning"> Data Science </span>Interview !</h1>
-          <p class="lead my-4">
-            Just starting out on your Data Science journey ? No Worries !<br>
-            AI Code will help you from scratch to crack top companies from around the globe to help you make Interview
-            Ready !
-
-          </p>
-          <button class="btn btn-outline-light btn-lg mb-5" data-bs-toggle="modal" data-bs-target="#enroll">
-            Start The Enrollment
-          </button>
+      <section>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center" id="courseplans">
+          <h1 class="display-4 fw-normal">Course Plans</h1>
+          <p class="fs-5 text-muted">We focus on teaching our students the fundamentals of the latest technologies to
+            prepare them for their first dev role.</p>
         </div>
-        <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
-      </div>
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 bg-dark border-light text-light">
+                  <h4 class="my-0 fw-normal">Interview Starter Kit</h4>
+                </div>
+                <div class="card-body bg-dark text-light">
+                  <h1 class="card-title pricing-card-title">Rs 999<small class="text-muted fw-light">+GST</small>
+                  </h1>
+                  <h4>(Limited Time Offer)</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><i class="bi bi-dot"></i>Get 400+ interview questions from top tech companies.</li>
+                    <li><i class="bi bi-dot"></i>Each problem is of many types from coursework.</li>
+                    <li><i class="bi bi-dot"></i> SQL & Data Analysis.</li>
+                    <li><i class="bi bi-dot"></i> Data structures and algorithms.</li>
+                    <li><i class="bi bi-dot"></i> Machine Learning theory.</li>
+                    <li><i class="bi bi-dot"></i> Modeling case studies.</li>
+                    <li><i class="bi bi-dot"></i> Database and system design.</li>
+                    <li><i class="bi bi-dot"></i> Product and business intuition.</li>
+                    <li><i class="bi bi-dot"></i> Statistics and probability.</li>
+                    <li><i class="bi bi-dot"></i> Python scripting.</li>
+                    <li><i class="bi bi-dot"></i> Experimentation & A/B testing.</li>
+                  </ul>
+                  <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 bg-dark border-light text-light">
+                  <h4 class="my-0 fw-normal">Crunch Time Kit</h4>
+                </div>
+                <div class="card-body bg-dark text-light border-light">
+                  <h1 class="card-title pricing-card-title">Rs 3,999<small class="text-muted fw-light">+GST</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><i class="bi bi-dot"></i>Get exclusive Interview Insights.</li>
+                    <li><i class="bi bi-dot"></i>Study and practice most relevant questions for your dream role and
+                      company.</li>
+                    <li><i class="bi bi-dot"></i>You can specify problems asked for various data science positions.</li>
+                    <li><i class="bi bi-dot"></i>Get Interview question topics, and level of difficulty.</li>
+                    <li><i class="bi bi-dot"></i>Interview Query Support.</li>
+                  </ul>
+                  <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary border-primary">
+                <div class="card-header py-3 bg-dark border-light text-light">
+                  <h4 class="my-0 fw-normal">On Demand Kit</h4>
+                </div>
+                <div class="card-body bg-dark text-light">
+                  <h1 class="card-title pricing-card-title">Consulting<small class="text-muted fw-light"></small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>
+                    <li><i class="bi bi-dot"></i>Contact for 1:1 session for virtual coffee.</li>
+                  </ul>
+                  <button class="btn btn-secondary btn-lg"
+                    onclick="window.location.href='https://theaicompanyworkspace.slack.com'">
+                    Contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </main>
     </div>
-  </section>
+    </section>
 
-  <!-- Newsletter -->
-  <section class="bg-secondary text-light p-5 my-2">
-    <div class="container text-align-center">
-      <div class="d-md-flex justify-content-center align-items-center">
-        <h3 class="mb-3 mb-md-0 lead"><b>Start your jouney with thousands of other Data Scientists all around the
-            world.</b></h3>
+    <!--Companies-->
 
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container" id="careers">
 
+        <h3 class="lead text-center text-white mb-5">
+          <b> Our members get placed at the top tech companies.</b>
+        </h3>
+        <div class="row g-4 d-flex justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-2">
+            <div class="card bg-dark border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/microsoft.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">Microsoft</h3>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-2">
+            <div class="card bg-dark text-light border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/amazon.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">Amazon</h3>
+
+              </div>
+            </div>
+            <div class="card bg-dark my-2 border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/airbnb.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">Airbnb</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2 ">
+            <div class="card bg-dark border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/meta.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">Meta</h3>
+              </div>
+            </div>
+            <div class="card bg-dark my-2 border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/salesforce.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">Salesforce</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-2">
+            <div class="card bg-dark border-0">
+              <div class="card-body text-center">
+                <img src="https://logo.clearbit.com/ibm.com" class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title mb-3 lead text-light">IBM</h3>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- Testimonials -->
 
-  <!-- Boxes -->
-  <section class="p-5">
     <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-md">
-          <div class="card bg-dark text-light">
-            <div class="card-body text-center">
-              <div class="h1 mb-3">
-                <i class="bi bi-laptop"></i>
+      <div class="testimonials test">
+        <div class="inner">
+          <h1>Testimonials</h1>
+          <div class="border"></div>
+
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <img src="img/person.jpg" alt="">
+                <div class="name"><b>Anna Smith</b></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+                <p>
+                  I started my career with AI Science and it turned out to be my best decision. AI Science courses
+                  helped me clear all my interviews.
+                </p>
               </div>
-              <h3 class="card-title mb-3">Crack the Data Science Interview</h3>
-              <p class="card-text">
-                Learn how to solve data science interview questions by practising number of questions each week.
-              </p>
-              <a href="#learn" class="btn btn-secondary">Read More</a>
             </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-secondary text-light">
-            <div class="card-body text-center">
-              <div class="h1 mb-3">
-                <i class="bi bi-person-square"></i>
+
+            <div class="col">
+              <div class="testimonial">
+                <img src="img/person4.png" alt="">
+                <div class="name"><b>Adam Payne</b></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <p>
+                  If you are an aspiring Data scientist and want to get an headstart in your preparation journey. I
+                  highly recommend AI Science courses.
+                </p>
               </div>
-              <h3 class="card-title mb-3">Exclusive Take-Home Challenges</h3>
-              <p class="card-text">
-                Get insider access to the interview process by working on take-home challenges from top companies.
-              </p>
-              <a href="#learn" class="btn btn-dark">Read More</a>
             </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-dark text-light">
-            <div class="card-body text-center">
-              <div class="h1 mb-3">
-                <i class="bi bi-people"></i>
+
+            <div class="col">
+              <div class="testimonial">
+                <img src="/img/person3.png" alt="">
+                <div class="name"><b>Sean Jones</b></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <p>
+                  AI Science industry oriented Data Science courses has helped me in my journey and has played an key
+                  role in shaping my career.
+                </p>
               </div>
-              <h3 class="card-title mb-3">Land Your Dream Job as a Data Scientist</h3>
-              <p class="card-text">
-                Ace your interview and land your dream data job in data science, analytics, and machine learning.
-              </p>
-              <a href="#learn" class="btn btn-secondary">Read More</a>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  </section>
 
-  <!-- Learn Sections -->
-  <section id="learn" class="p-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md">
-          <img src="img/ds1.jpg" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md p-5">
-          <h2>What comes in the upgrade ?</h2>
-          <p class="lead">
-            Upgrade to the full course and learn the right way to think with help from our in-depth solutions and
-            problem solving strategies.
-          </p>
-          <p class="lead">
-            <b>You'll get exclusive access to our full interview question bank, data science take-home challenges, video
-              course and mock interview content, and community of data science candidates and professionals.</b>
-          </p>
-          <a href="#courseplans"  class="btn btn-dark mt-3 ">
-            <i class="bi bi-chevron-down"></i> View plans
-          </a>
-        </div>
+
+    <!--slack-->
+    <footer class="p-4 bg-secondary text-light text-center position-relative display-inline" id="footer">
+      <div class="container">
+        <h3>Connect with us on Slack.</h3>
+        <button class="btn btn-light my-2" onclick="window.location.href='https://theaicompanyworkspace.slack.com'">
+
+
+          <i class="bi bi-link-45deg"></i> Visit Slack</button>
       </div>
-    </div>
-  </section>
-
-  <section id="learn" class="p-5 bg-dark text-light">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <h2>Why opt for an upgrade ?</h2>
-          <p class="lead">
-            Data Science interviews are extremely difficult given the wide breadth of topics to study for and lack of
-            consistency.
-          </p>
-          <p class="lead">
-            <b>Fortunately, that's why we are here to help.<br><br>
-              <i class="bi bi-dot"></i>We have sourced over 400+ interview questions from top tech companies.<br>
-              <i class="bi bi-dot"></i>Get ready for your next interview with our community of data science and machine
-              learning mentors and professionals.<br>
-              <i class="bi bi-dot"></i>Get crowdsourced insider details on the interview processes at various top tech
-              companies.<br>
-            </b>
-          </p>
-          <a href="#courseplans" class="btn btn-light mt-3">
-            <i class="bi bi-chevron-down"></i> Learn more
-          </a>
-        </div>
-        <div class="col-md">
-          <img src="img/ds3.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-   <!-- Question Accordion -->
-   <section class="bg-secondary text-light p-5">
-    <div class="container text-align-center" id="features">
-      <div class="d-md-flex justify-content-center align-items-center">
-        <h3 class="mb-3 mb-md-0 lead"><b>Get a headstart in your career as a Data Scientist with AI Code.</b></h3>
-
-
-      </div>
-    </div>
-  </section>
-  <!---->
-  <div class="container">
-    <section>
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center" id="courseplans">
-        <h1 class="display-4 fw-normal">Course Plans</h1>
-        <p class="fs-5 text-muted">We focus on teaching our students the fundamentals of the latest technologies to
-          prepare them for their first dev role.</p>
-      </div>
-      <main>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 bg-dark border-light text-light">
-                <h4 class="my-0 fw-normal">Interview Starter Kit</h4>
-              </div>
-              <div class="card-body bg-dark text-light">
-                <h1 class="card-title pricing-card-title">Rs 999<small class="text-muted fw-light">+GST</small>
-                </h1><h4>(Limited Time Offer)</h4>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><i class="bi bi-dot"></i>Get 400+ interview questions from top tech companies.</li>
-                  <li><i class="bi bi-dot"></i>Each problem is of many types from coursework.</li>
-                  <li><i class="bi bi-dot"></i> SQL & Data Analysis.</li>
-                  <li><i class="bi bi-dot"></i> Data structures and algorithms.</li>
-                  <li><i class="bi bi-dot"></i> Machine Learning theory.</li>
-                  <li><i class="bi bi-dot"></i> Modeling case studies.</li>
-                  <li><i class="bi bi-dot"></i> Database and system design.</li>
-                  <li><i class="bi bi-dot"></i> Product and business intuition.</li>
-                  <li><i class="bi bi-dot"></i> Statistics and probability.</li>
-                  <li><i class="bi bi-dot"></i> Python scripting.</li>
-                  <li><i class="bi bi-dot"></i> Experimentation & A/B testing.</li>
-                </ul>
-                <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 bg-dark border-light text-light">
-                <h4 class="my-0 fw-normal">Crunch Time Kit</h4>
-              </div>
-              <div class="card-body bg-dark text-light border-light">
-                <h1 class="card-title pricing-card-title">Rs 3,999<small class="text-muted fw-light">+GST</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><i class="bi bi-dot"></i>Get exclusive Interview Insights.</li>
-                  <li><i class="bi bi-dot"></i>Study and practice most relevant questions for your dream role and
-                    company.</li>
-                  <li><i class="bi bi-dot"></i>You can specify problems asked for various data science positions.</li>
-                  <li><i class="bi bi-dot"></i>Get Interview question topics, and level of difficulty.</li>
-                  <li><i class="bi bi-dot"></i>Interview Query Support.</li>
-                </ul>
-                <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary border-primary">
-              <div class="card-header py-3 bg-dark border-light text-light">
-                <h4 class="my-0 fw-normal">On Demand Kit</h4>
-              </div>
-              <div class="card-body bg-dark text-light">
-                <h1 class="card-title pricing-card-title">(Exclusive)<small class="text-muted fw-light"></small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>
-                  <li><i class="bi bi-dot"></i>Click below to apply for this exclusive course.</li>
-                </ul>
-                <button class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
-                 Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </main>
+    </footer>
   </div>
-  </section>
-  
-  <!--Companies-->
-
-  <section id="instructors" class="p-5 bg-dark">
-    <div class="container" id="careers">
-  
-      <h3 class="lead text-center text-white mb-5">
-       <b> Our members get placed at the top tech companies.</b>
-      </h3>
-      <div class="row g-4 d-flex justify-content-center align-items-center">
-        <div class="col-md-6 col-lg-2">
-          <div class="card bg-dark border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/microsoft.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">Microsoft</h3>
-
-            </div>
-          </div>
-         
-        </div>
-
-        <div class="col-md-6 col-lg-2">
-          <div class="card bg-dark text-light border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/amazon.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">Amazon</h3>
-
-            </div>
-          </div>
-          <div class="card bg-dark my-2 border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/airbnb.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">Airbnb</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-2 ">
-          <div class="card bg-dark border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/meta.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">Meta</h3>
-            </div>
-          </div>
-          <div class="card bg-dark my-2 border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/salesforce.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">Salesforce</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-2">
-          <div class="card bg-dark border-0">
-            <div class="card-body text-center">
-              <img src="https://logo.clearbit.com/ibm.com" class="rounded-circle mb-3" alt="" />
-              <h3 class="card-title mb-3 lead text-light">IBM</h3>
-
-            </div>
-          </div>
-         
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonials -->
-  <div class="container mainbody">
-    <div class="row">
-      <div class="col-md-8 col-center m-auto">
-        <h2>Testimonials</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Carousel -->
-          <div class="carousel-inner">
-            <div class="item carousel-item active">
-              <div class="img-box"><img src="img/person.jpg" alt=""></div>
-              <p class="testimonial">I started my career with AI Code and it turned out to be my best decision. If you
-                are an aspiring Data scientist and want to become an industry leader in this field. I highly recommend
-                AI Code to start your journey.</p>
-              <p class="overview"><b>Jennifer Smith</b>, AI Code Student</p>
-            </div>
-            <div class="item carousel-item">
-
-            </div>
-            <div class="item carousel-item">
-
-            </div>
-          </div>
-          <!-- Carousel Controls -->
-          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--slack-->
-  <footer class="p-4 bg-secondary text-light text-center position-relative display-inline" id="footer">
-    <div class="container">
-      <h3>Connect with us on Slack.</h3>
-     <button class="btn btn-light my-2" onclick="window.location.href='https://theaicompanyworkspace.slack.com'">
-     
-      
-      <i class="bi bi-link-45deg"></i> Visit Slack</button>
-    </div>
-  </footer>
-  </div>
-  <br/>
+  <br />
 
 
   <!-- Footer -->
@@ -397,7 +443,9 @@
       <h3>Ask a question ?</h3>
       <p class="lead">Ask us anything and we'll revert with a detailed answer.</p>
       <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#enroll">Enroll and Send Query</button>
-      <p class="lead my-4">Copyright &copy; 2022 AI Code</p><a href="https://www.linkedin.com/company/accelarateai/?viewAsMember=true" target="_blank" <i class="bi bi-linkedin"></i></a>
+      <p class="lead my-4">Copyright &copy; 2022 AI Science</p><a
+        href="https://www.linkedin.com/company/accelarateai/?viewAsMember=true" target="_blank" <i
+        class="bi bi-linkedin"></i></a>
 
       <a href="#" class="position-absolute bottom-0 end-0 p-5">
         <i class="bi bi-arrow-up-circle h1"></i>
@@ -421,11 +469,11 @@
               <label for="first-name" class="col-form-label">
                 First Name:
               </label>
-              <input name="firstname" type="text" class="form-control" id="first-name" required/>
+              <input name="firstname" type="text" class="form-control" id="first-name" required />
             </div>
             <div class="mb-3">
               <label for="last-name" class="col-form-label">Last Name:</label>
-              <input name="last-name" type="text" class="form-control" id="last-name" required/>
+              <input name="last-name" type="text" class="form-control" id="last-name" required />
             </div>
             <div class="mb-3">
               <label for="email" class="col-form-label">Email:</label>
@@ -433,13 +481,13 @@
             </div>
             <div class="mb-3">
               <label for="phone" class="col-form-label">Phone:</label>
-              <input type="tel" class="form-control" id="phone" required/>
+              <input type="tel" class="form-control" id="phone" required />
             </div>
             <div class="mb-3">
               <label for="phone" class="col-form-label">Any Query: (optional)</label>
-              <input type="text" name="query" class="form-control" id="query"/>
+              <input type="text" name="query" class="form-control" id="query" />
             </div>
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -447,7 +495,7 @@
           </button>
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-      </form>
+        </form>
       </div>
     </div>
   </div>
@@ -458,7 +506,11 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
   <script>
-   
+
+
+
+
+
   </script>
 </body>
 
